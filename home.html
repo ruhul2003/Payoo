@@ -10,7 +10,7 @@
      <script src="https://kit.fontawesome.com/0398fc8d82.js" crossorigin="anonymous"></script>
 </head>
 <body class="min-h-screen max-w-md bg-base-200 px-8 py-4 mx-auto">
-    <header class="flex flex-row justify-between mt-10 items-center">
+    <header class="flex flex-row justify-between mt-10 items-center sticky top-0 bg-base-200">
         <div class="flex flex-row gap-4">
             <div class="">
                 <img src="./images/logo.png" class="w-16 h-14" alt="">
@@ -72,7 +72,7 @@
                     <br>
 
                     <label class="label text-neutral font-bold">Amount</label>
-                    <input id="cashout-amount" type="text" maxlength="4" class="border-0 outline-none input rounded-full bg-base-200"
+                    <input id="cashout-amount" type="text" maxlength="10" class="border-0 outline-none input rounded-full bg-base-200"
                         placeholder="Enter Amount" />
                         <br>
                     <label class="label text-neutral font-bold">4 Digit Pin</label>
@@ -85,6 +85,8 @@
     </section>
 
 
+    
     <script src="./script/cashout.js"></script>
+    <script src="./script/machine.js"></script>
 </body>
 </html>
