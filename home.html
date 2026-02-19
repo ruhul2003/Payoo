@@ -9,7 +9,7 @@
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      <script src="https://kit.fontawesome.com/0398fc8d82.js" crossorigin="anonymous"></script>
 </head>
-<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+<body class="min-h-screen max-w-md bg-base-200 px-8 py-4 mx-auto">
     <header class="flex flex-row justify-between mt-10 items-center">
         <div class="flex flex-row gap-4">
             <div class="">
@@ -17,7 +17,7 @@
             </div>
 
             <div class="flex flex-col">
-                <p class="text-xl font-bold">$45000</p>
+                <p class="text-xl font-bold">$<span id="balance">45000</span></p>
                 <p class="text-sm text-[#777]">Available Balance</p>
             </div>
         </div>
@@ -60,9 +60,9 @@
     </div>
 
     <section id="cashout" class="mt-10">
-        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
+        <div class="card  w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
             <h2 class="font-bold text-xl">Cashout</h2>
-            <div class="card-body pl-3">
+            <div class="card-body pl-3 bg-base-100 rounded-xl">
                 <fieldset class="fieldset">
                     <label class="label text-neutral font-bold">Agent Number</label>
                     <input id="cashout-number" type="number"
