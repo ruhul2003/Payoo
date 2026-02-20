@@ -32,37 +32,39 @@
         <p class="mt-5 text-[16px] text-[#777]">Enjoy easy and convenient financial services with us. Cashout charge is low and no hidden fees.</p>
     </section>
 
+    <!----------------------- Buttons ------------------------>
+
     <div class="buttons mt-12 grid grid-cols-3 gap-4">
-        <div class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
+        <button onclick="showOnly('add-money')" class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
             <img src="./images/opt-1.png" alt="">
             <p>Add Money</p>
-        </div>
-        <div class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
+        </button>
+        <button onclick="showOnly('cashout')" class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
             <img src="./images/opt-2.png" alt="">
             <p>Cashout</p>
-        </div>
-        <div class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
+        </button>
+        <button class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
             <img src="./images/opt-3.png" alt="">
             <p>Transfer Money</p>
-        </div>
-        <div class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
+        </button>
+        <button class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
             <img src="./images/opt-4.png" alt="">
             <p>Get Bonus</p>
-        </div>
-        <div class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
+        </button>
+        <button class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
             <img src="./images/opt-5.png" alt="">
             <p>Pay Bill</p>
-        </div>
-        <div class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
+        </button>
+        <button class="button1 flex flex-col items-center btn btn-soft gap-2 h-full py-4 ">
             <img src="./images/opt-6.png" alt="">
             <p>Transactions</p>
-        </div>
+        </button>
     </div>
 
 
     <!----------------------- Add Money ------------------------>
 
-    <section id="add-money" class="mt-10">
+    <section id="add-money" class="mt-10 hidden">
         <h2 class="font-bold text-xl">Add Money</h2>
         <div class="card-body pl-3 bg-base-100 rounded-xl">
                 <fieldset class="fieldset">
