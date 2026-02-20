@@ -59,7 +59,44 @@
         </div>
     </div>
 
-    <section id="cashout" class="mt-10">
+
+    <!----------------------- Add Money ------------------------>
+
+    <section id="add-money" class="mt-10">
+        <h2 class="font-bold text-xl">Add Money</h2>
+        <div class="card-body pl-3 bg-base-100 rounded-xl">
+                <fieldset class="fieldset">
+
+                    <label class="label text-neutral font-bold">Select Bank</label>
+                    <select id="add-money-bank" class="select w-full bg-base-200 rounded-full outline-none">
+                        <option disabled selected value="ISLAMI">Islami</option>
+                        <option value="DBBL">DBBL</option>
+                        <option value="CITY">City</option>
+                        <option value="SONALI">Sonali</option>
+                    </select>
+
+                    <label class="label text-neutral font-bold mt-6">Bank Account Number</label>
+                    <input id="add-money-number" type="number"
+                        class="input rounded-full bg-base-200 border-0 outline-none"
+                        placeholder="Enter 11 digit Account Number" />
+
+                    <br>
+
+                    <label class="label text-neutral font-bold">Amount To Add</label>
+                    <input id="add-money-amount" type="text" maxlength="10" class="border-0 outline-none input rounded-full bg-base-200"
+                        placeholder="Add Amount To Add" />
+                        <br>
+                    <label class="label text-neutral font-bold">4 Digit Pin</label>
+                    <input id="add-money-pin" type="password" maxlength="4" class="border-0 outline-none input rounded-full bg-base-200"
+                        placeholder="Enter 4 Digit Pin" />
+                    <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Add Money</button>
+                </fieldset>
+            </div>
+    </section>
+
+    <!----------------------- Cashout ------------------------>
+
+    <section id="cashout" class="mt-10 hidden">
         <div class="card  w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
             <h2 class="font-bold text-xl">Cashout</h2>
             <div class="card-body pl-3 bg-base-100 rounded-xl">
@@ -84,9 +121,12 @@
         </div>
     </section>
 
-
     
-    <script src="./script/cashout.js"></script>
+
+
+
     <script src="./script/machine.js"></script>
+    <script src="./script/cashout.js"></script>
+    
 </body>
 </html>
